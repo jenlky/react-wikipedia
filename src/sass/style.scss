@@ -1,0 +1,52 @@
+html {
+  font-size: 62.5%; /* 62.5% of 16px = 10px */
+}
+
+body, #root, .content {
+  height: 100%;
+  background: #ffffe0;
+}
+
+.form--align {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.form--font {
+  font-size: 1.4rem;
+}
+
+.search__bar {
+  text-align: center;
+  padding: 0.5rem;
+  width: 26rem;
+}
+
+.search__btn {
+  padding: 0.6rem;
+  border-radius: 1rem;
+}
+
+.container--spacing {
+  margin-top: 2.5rem;
+}
+
+.container--font {
+  font-size: 1.7rem;
+}
+
+.title {
+
+}
+
+.content {
+
+}
+
+.title__container {
+  float: left;
+}
+
+.content__container {
+  
+}
