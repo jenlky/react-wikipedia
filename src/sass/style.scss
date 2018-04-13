@@ -1,3 +1,6 @@
+$title-bg: #F4F4E9;
+$content-bg: #32343B;
+
 html {
   font-size: 62.5%; /* 62.5% of 16px = 10px */
 }
@@ -35,18 +38,36 @@ body, #root, .content {
   font-size: 1.7rem;
 }
 
-.title {
+ul {
 
-}
 
-.content {
+  li {
+    list-style-type: none;
+    height: auto;
+  }
 
-}
+  .title {
+    display: inline-block;
+    background: $title-bg;
+    color: $content-bg;
+    height: inherit;
+    margin: 0;
+    text-align: right;
+    vertical-align: middle;
+  }
 
-.title__container {
-  float: left;
-}
+  .content {
+    display: inline-block;
+    background: $content-bg;
+    color: $title-bg;
+    text-decoration: none;
 
-.content__container {
-  
+    :hover {
+      text-decoration: none;
+      color: $title-bg;
+      opacity: 0.9;
+    }
+  }
+
+
 }

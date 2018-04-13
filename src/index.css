@@ -28,5 +28,25 @@ body, #root, .content {
 .container--font {
   font-size: 1.7rem; }
 
-.title__container {
-  float: left; }
+ul li {
+  list-style-type: none;
+  height: auto; }
+
+ul .title {
+  display: inline-block;
+  background: #F4F4E9;
+  color: #32343B;
+  height: inherit;
+  margin: 0;
+  text-align: right;
+  vertical-align: middle; }
+
+ul .content {
+  display: inline-block;
+  background: #32343B;
+  color: #F4F4E9;
+  text-decoration: none; }
+  ul .content :hover {
+    text-decoration: none;
+    color: #F4F4E9;
+    opacity: 0.9; }
