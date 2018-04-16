@@ -1,23 +1,23 @@
 import React from "react";
 
 const ArticleRow = ({dataArray}) => {
-  console.log(dataArray);
-
   const dataRow = dataArray.map(row => {
     return (
-      <li key={row.title}>
-        <p className="title col-md-2">{row.title}</p>
-        <div className="content col-md-10">
+      <tr key={row.title}>
+        <td className="title">{row.title}</td>
+        <td className="content__div">
           <a href={row.link} className="content">{row.content}</a>
-        </div>
-      </li>
+        </td>
+      </tr>
     );
   });
 
   return (
-    <ul className="container">
-      {dataRow}
-    </ul>
+    <table>
+      <tbody>
+        {dataRow}
+      </tbody>
+    </table>
   );
 }
 
