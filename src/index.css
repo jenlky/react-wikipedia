@@ -19,50 +19,83 @@ h2 {
 
 .search__bar {
   text-align: center;
+  width: 26rem;
   padding: 0.5rem;
-  width: 26rem; }
+  margin: 1.5rem 0.6rem;
+  font-size: 1.6rem; }
 
 .search__btn {
   padding: 0.6rem;
   border-radius: 1rem; }
 
-.container--spacing {
-  margin-top: 2.5rem; }
+.container--margin--top {
+  margin-top: 2rem; }
 
 .container--font {
   font-size: 1.7rem; }
 
-.article__title {
-  text-align: right; }
+.header__table--margin--btm {
+  margin-bottom: 1rem; }
 
 .text {
-  display: inline-block;
   color: #274555;
   font: 700 1em sans-serif; }
 
-ul li {
-  display: flex;
-  list-style-type: none;
-  margin: 1px 0 1px 0; }
-
-ul .title {
-  background: #F4F4E9;
-  color: #32343B;
-  margin: 0 1px 0 0;
+.article__title {
   text-align: right;
-  align-self: center;
-  flex: 1 0 auto; }
+  width: 15.4rem;
+  padding-right: 0.8rem; }
 
-ul .content__div {
-  padding: 0; }
+.snippet {
+  padding-left: 1.5rem; }
 
-ul .content {
-  display: inline-block;
-  background: #32343B;
-  color: #F4F4E9;
-  text-decoration: none;
-  padding: 10px 15px 10px 15px; }
-  ul .content :hover {
-    text-decoration: none;
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey; }
+  table .title {
+    background: #F4F4E9;
+    color: #32343B;
+    text-align: right;
+    width: 15.4rem;
+    padding-right: 1rem;
+    font: 500 2.1rem "Garamond", serif;
+    border: 1px solid rgba(39, 41, 50, 0.1); }
+  table .content {
+    display: block;
+    background: #32343B;
     color: #F4F4E9;
-    opacity: 0.9; }
+    text-decoration: none;
+    padding: 1rem 1.5rem; }
+    table .content :hover {
+      text-decoration: none;
+      color: #F4F4E9;
+      opacity: 0.9; }
+
+@media (max-width: 550px) {
+  table .title {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    width: auto; }
+  .container {
+    padding: 0; }
+  .container--margin--top {
+    margin-top: 1.5rem; }
+  .article__title {
+    width: 9.8rem;
+    padding-right: 0.4rem;
+    text-align: inherit; }
+  .search__bar {
+    width: 20rem; } }
+
+@media (max-width: 376px) {
+  .title {
+    position: absolute;
+    margin-top: -2.8rem;
+    margin-left: 2px; }
+  .container--margin--top {
+    margin-top: 1rem; }
+  .header__table--margin--btm {
+    margin-bottom: 2.9rem; }
+  tbody tr:not(:last-child) .content__div {
+    padding-bottom: 4rem; } }

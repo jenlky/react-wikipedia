@@ -27,8 +27,10 @@ h2 {
 
 .search__bar {
   text-align: center;
-  padding: 0.5rem;
   width: 26rem;
+  padding: 0.5rem;
+  margin: 1.5rem 0.6rem;
+  font-size: 1.6rem;
 }
 
 .search__btn {
@@ -36,56 +38,109 @@ h2 {
   border-radius: 1rem;
 }
 
-.container--spacing {
-  margin-top: 2.5rem;
+.container--margin--top {
+  margin-top: 2rem;
 }
 
 .container--font {
   font-size: 1.7rem;
 }
 
-.article__title {
-  // display: inline-block;
-  text-align: right;
+.header__table--margin--btm {
+  margin-bottom: 1rem;
 }
 
 .text {
-  display: inline-block;
   color: $all-title-color;
   font: 700 1em sans-serif;
 }
 
-ul {
-  li {
-    display: flex;
-    list-style-type: none;
-    margin: 1px 0 1px 0;
-  }
+.article__title {
+  text-align: right;
+  width: 15.4rem;
+  padding-right: 0.8rem;
+}
+
+.snippet {
+  padding-left: 1.5rem;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
 
   .title {
     background: $title-bg;
     color: $content-bg;
-    margin: 0 1px 0 0;
     text-align: right;
-    align-self: center;
-    flex: 1 0 auto;
+    width: 15.4rem;
+    padding-right: 1rem;
+    font: 500 2.1rem "Garamond", serif;
+    border: 1px solid rgba(39, 41, 50, 0.1);
   }
 
   .content__div {
-    padding: 0;
+    //border: 1px solid rgba(250, 250, 250, 0.1);
   }
 
   .content {
-    display: inline-block;
+    display: block;
     background: $content-bg;
     color: $title-bg;
     text-decoration: none;
-    padding: 10px 15px 10px 15px;
+    padding: 1rem 1.5rem;
 
     :hover {
       text-decoration: none;
       color: $title-bg;
       opacity: 0.9;
     }
+  }
+}
+
+@media (max-width: 550px) {
+  table .title {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    width: auto;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .container--margin--top {
+    margin-top: 1.5rem;
+  }
+
+  .article__title {
+    width: 9.8rem;
+    padding-right: 0.4rem;
+    text-align: inherit;
+  }
+
+  .search__bar {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .title {
+    position: absolute;
+    margin-top: -2.8rem;
+    margin-left: 2px;
+  }
+
+  .container--margin--top {
+    margin-top: 1rem;
+  }
+
+  .header__table--margin--btm {
+    margin-bottom: 2.9rem;
+  }
+
+  tbody tr:not(:last-child) .content__div {
+    padding-bottom: 4rem;
   }
 }
