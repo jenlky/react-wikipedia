@@ -7,7 +7,7 @@ const ArticleRow = ({dataArray}) => {
     return (
       <li key={row.title}>
         <p className="title col-md-2">{row.title}</p>
-        <div className="content col-md-10">
+        <div className="content__div col-md-10">
           <a href={row.link} className="content">{row.content}</a>
         </div>
       </li>

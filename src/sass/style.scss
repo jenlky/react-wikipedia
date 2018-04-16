@@ -1,5 +1,6 @@
 $title-bg: #F4F4E9;
 $content-bg: #32343B;
+$all-title-color: #274555;
 
 html {
   font-size: 62.5%; /* 62.5% of 16px = 10px */
@@ -8,6 +9,11 @@ html {
 body, #root, .content {
   height: 100%;
   background: #ffffe0;
+}
+
+h2 {
+  color: $all-title-color;
+  font: 700 1.8em sans-serif;
 }
 
 .form--align {
@@ -38,22 +44,35 @@ body, #root, .content {
   font-size: 1.7rem;
 }
 
+.article__title {
+  // display: inline-block;
+  text-align: right;
+}
+
+.text {
+  display: inline-block;
+  color: $all-title-color;
+  font: 700 1em sans-serif;
+}
+
 ul {
-
-
   li {
+    display: flex;
     list-style-type: none;
-    height: auto;
+    margin: 1px 0 1px 0;
   }
 
   .title {
-    display: inline-block;
     background: $title-bg;
     color: $content-bg;
-    height: inherit;
-    margin: 0;
+    margin: 0 1px 0 0;
     text-align: right;
-    vertical-align: middle;
+    align-self: center;
+    flex: 1 0 auto;
+  }
+
+  .content__div {
+    padding: 0;
   }
 
   .content {
@@ -61,6 +80,7 @@ ul {
     background: $content-bg;
     color: $title-bg;
     text-decoration: none;
+    padding: 10px 15px 10px 15px;
 
     :hover {
       text-decoration: none;
@@ -68,6 +88,4 @@ ul {
       opacity: 0.9;
     }
   }
-
-
 }
