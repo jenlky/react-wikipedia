@@ -2,6 +2,7 @@ import React from "react";
 
 const ArticleRow = ({dataArray}) => {
   const dataRow = dataArray.map(row => {
+    console.log(row.title);
     return (
       <tr key={row.title}>
         <td className="title">{row.title}</td>
@@ -13,7 +14,7 @@ const ArticleRow = ({dataArray}) => {
   });
 
   return (
-    <table>
+    <table className="data-table">
       <tbody>
         {dataRow}
       </tbody>

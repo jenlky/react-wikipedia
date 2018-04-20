@@ -49,28 +49,30 @@ h2 {
 .snippet {
   padding-left: 1.5rem; }
 
-table {
+.data-table {
   border-collapse: separate;
   border-spacing: 2px;
   border-color: grey; }
-  table .title {
-    background: #F4F4E9;
-    color: #32343B;
-    text-align: right;
-    width: 15.4rem;
-    padding-right: 1rem;
-    font: 500 2.1rem "Garamond", serif;
-    border: 1px solid rgba(39, 41, 50, 0.1); }
-  table .content {
-    display: block;
-    background: #32343B;
-    color: #F4F4E9;
+
+.title {
+  background: #F4F4E9;
+  color: #32343B;
+  text-align: right;
+  width: 15.4rem;
+  padding-right: 1rem;
+  font: 500 2.1rem "Garamond", serif;
+  border: 1px solid rgba(39, 41, 50, 0.1); }
+
+.content {
+  display: block;
+  background: #32343B;
+  color: #F4F4E9;
+  text-decoration: none;
+  padding: 1rem 1.5rem; }
+  .content :hover {
     text-decoration: none;
-    padding: 1rem 1.5rem; }
-    table .content :hover {
-      text-decoration: none;
-      color: #F4F4E9;
-      opacity: 0.9; }
+    color: #F4F4E9;
+    opacity: 0.9; }
 
 @media (max-width: 550px) {
   table .title {
@@ -92,10 +94,12 @@ table {
   .title {
     position: absolute;
     margin-top: -2.8rem;
-    margin-left: 2px; }
+    text-align: left; }
+  .data-table {
+    border-collapse: collapse; }
   .container--margin--top {
     margin-top: 1rem; }
   .header__table--margin--btm {
-    margin-bottom: 2.9rem; }
+    margin-bottom: 3.4rem; }
   tbody tr:not(:last-child) .content__div {
     padding-bottom: 4rem; } }

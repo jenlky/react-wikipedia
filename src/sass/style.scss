@@ -65,37 +65,37 @@ h2 {
   padding-left: 1.5rem;
 }
 
-table {
+.data-table {
   border-collapse: separate;
   border-spacing: 2px;
   border-color: grey;
+}
 
-  .title {
-    background: $title-bg;
-    color: $content-bg;
-    text-align: right;
-    width: 15.4rem;
-    padding-right: 1rem;
-    font: 500 2.1rem "Garamond", serif;
-    border: 1px solid rgba(39, 41, 50, 0.1);
-  }
+.title {
+  background: $title-bg;
+  color: $content-bg;
+  text-align: right;
+  width: 15.4rem;
+  padding-right: 1rem;
+  font: 500 2.1rem "Garamond", serif;
+  border: 1px solid rgba(39, 41, 50, 0.1);
+}
 
-  .content__div {
-    //border: 1px solid rgba(250, 250, 250, 0.1);
-  }
+.content__div {
+  //border: 1px solid rgba(250, 250, 250, 0.1);
+}
 
-  .content {
-    display: block;
-    background: $content-bg;
-    color: $title-bg;
+.content {
+  display: block;
+  background: $content-bg;
+  color: $title-bg;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+
+  :hover {
     text-decoration: none;
-    padding: 1rem 1.5rem;
-
-    :hover {
-      text-decoration: none;
-      color: $title-bg;
-      opacity: 0.9;
-    }
+    color: $title-bg;
+    opacity: 0.9;
   }
 }
 
@@ -129,7 +129,11 @@ table {
   .title {
     position: absolute;
     margin-top: -2.8rem;
-    margin-left: 2px;
+    text-align: left;
+  }
+
+  .data-table {
+    border-collapse: collapse;
   }
 
   .container--margin--top {
@@ -137,7 +141,7 @@ table {
   }
 
   .header__table--margin--btm {
-    margin-bottom: 2.9rem;
+    margin-bottom: 3.4rem;
   }
 
   tbody tr:not(:last-child) .content__div {
