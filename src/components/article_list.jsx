@@ -3,17 +3,11 @@ import ArticleRow from "./article_row";
 
 const ArticleList = ({dataArray}) => {
   return (
-    <div className="container container--margin--top container--font">
-      <table className="header__table--margin--btm">
-        <thead>
-          <tr>
-            <th className="text article__title">Article Title</th>
-            <th className="text snippet">Snippet (click to view article)</th>
-          </tr>
-        </thead>
-      </table>
+    <section className="grid container container--margin container--font">
+      <h4 className="header-text article__title">Article Title</h4>
+      <h4 className="header-text snippet">Snippet (click to view article)</h4>
       <ArticleRow dataArray={dataArray} />
-    </div>
+    </section>
   );
 }
 

@@ -2,22 +2,19 @@ import React from "react";
 
 const ArticleRow = ({dataArray}) => {
   const dataRow = dataArray.map(row => {
+    console.log(row.title);
     return (
-      <tr key={row.title}>
-        <td className="title">{row.title}</td>
-        <td className="content__div">
-          <a href={row.link} className="content">{row.content}</a>
-        </td>
-      </tr>
+      <React.Fragment>
+        <div className="title" key={row.title}>{row.title}</div>
+        <a href={row.link} className="content"  key={row.link}>{row.content}</a>
+      </React.Fragment>
     );
   });
 
   return (
-    <table>
-      <tbody>
-        {dataRow}
-      </tbody>
-    </table>
+    <React.Fragment>
+      {dataRow}
+    </React.Fragment>
   );
 }
 
