@@ -26,7 +26,12 @@ h2 {
 
 .search__btn {
   padding: 0.6rem;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  background: #F4F4E9;
+  font: 700 1.4rem sans-serif;
+  cursor: pointer; }
+  .search__btn:hover {
+    background: #dbdbcd; }
 
 .grid {
   display: grid;
@@ -36,13 +41,14 @@ h2 {
 .container {
   padding: 0; }
   .container--margin {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    margin-bottom: 4rem; }
   .container--font {
     font-size: 1.7rem; }
 
 .header-text {
   color: #274555;
-  font: 700 1em sans-serif; }
+  font: 700 1.6rem sans-serif; }
 
 .article__title {
   justify-self: end;
@@ -73,32 +79,50 @@ h2 {
     color: #F4F4E9;
     opacity: 0.9; }
 
-@media (max-width: 550px) {
-  table .title {
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-    width: auto; }
+@media (max-width: 769px) {
   .container {
-    padding: 0; }
-  .container--margin--top {
+    max-width: 100%; }
+  .title {
+    font-size: 1.8rem; }
+  .content {
+    font-size: 1.6rem; }
+  .search__btn {
+    font-size: 1.3rem; }
+  .container--margin {
+    margin-bottom: 0rem; } }
+
+@media (max-width: 550px) {
+  .header-text {
+    font-size: 1.5rem; }
+  .title {
+    padding-right: 0.5rem;
+    font-size: 1.7rem; }
+  .content {
+    font-size: 1.5rem; }
+  .container--margin {
     margin-top: 1.5rem; }
   .article__title {
-    width: 9.8rem;
-    padding-right: 0.4rem;
-    text-align: inherit; }
+    padding-right: 0.4rem; }
   .search__bar {
     width: 20rem; } }
 
-@media (max-width: 376px) {
+@media (max-width: 500px) {
+  .header-text {
+    font-size: 1.3rem; }
   .title {
-    position: absolute;
-    margin-top: -2.8rem;
-    text-align: left; }
-  .data-table {
-    border-collapse: collapse; }
-  .container--margin--top {
-    margin-top: 1rem; }
-  .header__table--margin--btm {
-    margin-bottom: 3.4rem; }
-  tbody tr:not(:last-child) .content__div {
-    padding-bottom: 4rem; } }
+    font-size: 1.5rem; }
+  .content {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.2rem; } }
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 24% 1fr; }
+  .container--margin {
+    margin-top: 1rem; } }
+
+@media (max-width: 350px) {
+  .grid {
+    grid-template-columns: 25% 1fr; }
+  .search__bar {
+    width: 18rem; } }

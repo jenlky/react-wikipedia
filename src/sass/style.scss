@@ -41,6 +41,13 @@ h2 {
   &__btn {
     padding: 0.6rem;
     border-radius: 1rem;
+    background: $title-bg;
+    font: 700 1.4rem sans-serif;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(#dbdbcd, 1);
+    }
   }
 }
 
@@ -57,6 +64,7 @@ h2 {
 
   &--margin {
     margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 
   &--font {
@@ -67,7 +75,7 @@ h2 {
 // headers for section
 .header-text {
   color: $all-title-color;
-  font: 700 1em sans-serif;
+  font: 700 1.6rem sans-serif;
 }
 
 .article__title {
@@ -86,8 +94,6 @@ h2 {
   background: $title-bg;
   color: $content-bg;
   text-align: right;
-  // justify-self: end; -> since we need default value stretch
-  // align-self: center; -> since we need default value stretch
   padding-right: 1.5rem;
   font: 700 2.1rem "Garamond", serif;
   border: 1px solid rgba(39, 41, 50, 0.1);
@@ -114,28 +120,47 @@ h2 {
 
 // media queries to polish website n set breakpoints
 @media (max-width: 769px){
+  .container {
+    max-width: 100%;
+  }
 
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .content {
+    font-size: 1.6rem;
+  }
+
+  .search__btn {
+    font-size: 1.3rem;
+  }
+
+  .container--margin {
+    margin-bottom: 0rem;
+  }
 }
 
 @media (max-width: 550px) {
-  table .title {
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-    width: auto;
+  .header-text {
+    font-size: 1.5rem;
   }
 
-  .container {
-    padding: 0;
+  .title {
+    padding-right: 0.5rem;
+    font-size: 1.7rem;
   }
 
-  .container--margin--top {
+  .content {
+    font-size: 1.5rem;
+  }
+
+  .container--margin {
     margin-top: 1.5rem;
   }
 
   .article__title {
-    width: 9.8rem;
     padding-right: 0.4rem;
-    text-align: inherit;
   }
 
   .search__bar {
@@ -143,26 +168,37 @@ h2 {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 500px) {
+  .header-text {
+    font-size: 1.3rem;
+  }
+
   .title {
-    position: absolute;
-    margin-top: -2.8rem;
-    text-align: left;
+    font-size: 1.5rem;
   }
 
-  .data-table {
-    border-collapse: collapse;
+  .content {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 24% 1fr;
   }
 
-  .container--margin--top {
+  .container--margin {
     margin-top: 1rem;
   }
+}
 
-  .header__table--margin--btm {
-    margin-bottom: 3.4rem;
+@media (max-width: 350px) {
+  .grid {
+    grid-template-columns: 25% 1fr;
   }
 
-  tbody tr:not(:last-child) .content__div {
-    padding-bottom: 4rem;
+  .search__bar {
+    width: 18rem;
   }
 }
