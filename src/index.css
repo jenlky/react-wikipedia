@@ -77,7 +77,8 @@ h2 {
   .content:hover {
     text-decoration: none;
     color: #F4F4E9;
-    opacity: 0.9; }
+    background: rgba(54, 47, 0, 0.6);
+    opacity: 0.8; }
 
 @media (max-width: 769px) {
   .container {
@@ -92,6 +93,8 @@ h2 {
     margin-bottom: 0rem; } }
 
 @media (max-width: 550px) {
+  .grid {
+    grid-template-columns: 24% 1fr; }
   .header-text {
     font-size: 1.5rem; }
   .title {
@@ -117,12 +120,14 @@ h2 {
 
 @media (max-width: 400px) {
   .grid {
-    grid-template-columns: 24% 1fr; }
+    grid-template-columns: 25% 1fr; }
+  .title {
+    font-size: 1.3rem; }
   .container--margin {
     margin-top: 1rem; } }
 
 @media (max-width: 350px) {
   .grid {
-    grid-template-columns: 25% 1fr; }
+    grid-template-columns: 26% 1fr; }
   .search__bar {
     width: 18rem; } }

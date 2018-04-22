@@ -1,3 +1,4 @@
+$body-bg: #ffffe0;
 $title-bg: #F4F4E9;
 $content-bg: #32343B;
 $all-title-color: #274555;
@@ -8,7 +9,7 @@ html {
 
 body, #root, .content {
   height: 100%;
-  background: #ffffe0;
+  background:$body-bg;
 }
 
 // Search Wikipedia
@@ -107,14 +108,11 @@ h2 {
   padding: 1rem 1.5rem;
   border: 1px solid rgba(250, 250, 250, 0.1);
 
-  &__div {
-
-  }
-
   &:hover {
     text-decoration: none;
     color: $title-bg;
-    opacity: 0.9;
+    background: rgba(#362f00, 0.6);
+    opacity: 0.8;
   }
 }
 
@@ -142,6 +140,10 @@ h2 {
 }
 
 @media (max-width: 550px) {
+  .grid {
+    grid-template-columns: 24% 1fr;
+  }
+
   .header-text {
     font-size: 1.5rem;
   }
@@ -185,7 +187,11 @@ h2 {
 
 @media (max-width: 400px) {
   .grid {
-    grid-template-columns: 24% 1fr;
+    grid-template-columns: 25% 1fr;
+  }
+
+  .title {
+    font-size: 1.3rem;
   }
 
   .container--margin {
@@ -195,7 +201,7 @@ h2 {
 
 @media (max-width: 350px) {
   .grid {
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 26% 1fr;
   }
 
   .search__bar {
