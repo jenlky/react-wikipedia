@@ -3,3 +3,5 @@ This project was created with create-react-app, bootstrap container, HTML, CSS a
 Grid is really powerful! I'm going to spend extra time to learn and practise it and flexbox. 
 
 ## 
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/helplah/react-wikipedia.svg)](https://greenkeeper.io/)
