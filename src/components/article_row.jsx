@@ -6,7 +6,7 @@ const ArticleRow = ({dataArray}) => {
     return (
       <React.Fragment>
         <div className="title" key={row.title}>{row.title}</div>
-        <a href={row.link} className="content"  key={row.link}>{row.content}</a>
+        <a href={row.link} className="content" key={row.link} target="_blank">{row.content}</a>
       </React.Fragment>
     );
   });
