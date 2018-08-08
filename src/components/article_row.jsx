@@ -1,6 +1,7 @@
 import React from "react";
 
 const ArticleRow = ({dataArray}) => {
+  
   const dataRow = dataArray.map(row => {
     console.log(row.title);
     return (

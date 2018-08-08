@@ -21,7 +21,7 @@ class App extends Component {
       .then(res => {
         console.log(res);
 
-        const [keyword, titles, contents, links] = res;
+        const [titles, contents, links] = res;
         const zippedInfo = titles.map((title, index) => ({
           title: titles[index],
           content: contents[index],
