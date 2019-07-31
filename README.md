@@ -1,6 +1,8 @@
 # React Wikipedia Viewer
 
-Link: https://www.jenlky.com/projects/react-wikipedia/
+Link: https://jenlky.github.io/react-wikipedia/
+
+Blog: https://www.jenlky.com/projects/react-wikipedia/
 
 This website searches the typed word at Wikipedia and returns the top 10 results. When you click on any of the results, it directs you to the said result.
 
